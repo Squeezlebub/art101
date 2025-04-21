@@ -19,3 +19,12 @@ function main() {
 
 // let's get this party started
 main();
+
+// Pseudocode for Rock-Paper-Scissors:
+  //Create a field for player 1 input
+    //Accept user input, “rock”, “paper”, or “scissors”
+  //Generate computer choice
+  //Evaluate who wins 
+    //Rock beats scissors, paper beats rock, and scissors beats paper
+  //Display who wins
+  // Ask if the player wants to play again, and repeat from step 1 if yes.
