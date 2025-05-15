@@ -1,0 +1,28 @@
+.message {
+  
+    border: 1px solid green;
+    
+  }
+  
+  .text {
+    max-width: 500px;
+  }
+
+
+  .text:nth-child(odd) {
+    text-align: left;
+  }
+  
+  .text:nth-child(odd) {
+    background-color: rgb(233, 233, 233);
+    color: black;
+  }
+  
+  .text:nth-child(even) {
+    text-align: right;
+  }
+  
+  .text:nth-child(even) {
+    background-color: #45ba59;
+    color: white;
+  }
