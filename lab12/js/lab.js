@@ -1,5 +1,6 @@
 //click listener
 $("#submit").click(function(){
+    let input = $("#input").val().trim();
     //function to obtain our bending style based on name length
     function sortInput(input){
     //create our array
@@ -15,5 +16,5 @@ if(input){
 else {
     $("#output").html("<p>You need to enter a name.</p>");
 }
-console.log(sortInput());
 });
+
