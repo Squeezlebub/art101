@@ -1,13 +1,19 @@
-function whenClicked (){
-    let data=$("input").val();
-    if(data){
-        $("#output").append
-        console.log("There is some data");
-    }
+//click listener
+$("#submit").click(function(){
+    //function to obtain our bending style based on name length
+    function sortInput(input){
+    //create our array
+        let bender=["Water", "Earth", "Fire", "Air"];
     
-    else {
-
-    }
+        //return an element from the array based on the length of the inputted name
+        return bender[(input.length)%4];
+    };
+//conditional for outputting the correct information
+if(input){
+    $("#output").html("<p>Your bending style is " +sortInput(input)+"!</p>");
 }
-
-$("#button").click(whenClicked);
+else {
+    $("#output").html("<p>You need to enter a name.</p>");
+}
+console.log(sortInput());
+});
