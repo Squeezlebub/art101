@@ -1,5 +1,5 @@
 //tells our function what to do and what parameters are passed to it
-function sortUserName() {
+let sortUserName = function () {
 
     //create a variable assigned to user inputs
     var userName = window.prompt("What is your name?");
@@ -8,14 +8,8 @@ function sortUserName() {
     console.log("userName assigned value " + userName);
 
     return userName.split('').sort().join('');
-}
+};
 
-function main() {
-    console.log("Main function started.");
+$("#output").append("Here is your better name: " + sortUserName() + "!");
 
-    //prints on the site
-    document.writeln("Here is your better name: " + sortUserName());
 
-}
-
-main();
