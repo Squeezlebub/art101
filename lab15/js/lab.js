@@ -7,7 +7,6 @@ $("#submit").click(function(){
         dataType: "json",
         success: function(data) {
             console.log(data);
-            $("#output1").html(data.answer);
             $("#output").html(data.answer + "<br><img src=\""+data.image+"\"></img>");
         },
         error: function (jqXHR, textStatus, errorThrown) {
